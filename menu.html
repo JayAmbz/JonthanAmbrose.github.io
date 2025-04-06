@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Prime Dough Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Prime Dough Bakery Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="cart-link-container">
+                <a href="order.html" class="cart-link">
+                    🛒 Cart <span class="cart-count" style="display: none;">0</span>
+                </a>
+            </div>
+            
+            <!-- Mobile menu button  -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <h1>Our Menu</h1>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="bread">Breads</button>
+            <button class="category-btn" data-category="pastry">Pastries</button>
+            <button class="category-btn" data-category="cake">Cakes</button>
+            <button class="category-btn" data-category="drink">Drinks</button>
+            <button class="category-btn" data-category="cookie">Cookies</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- Bread Items -->
+            <div class="menu-item" data-category="bread">
+                <img src="images/sourdough.jpg" alt="Artisan Sourdough Bread">
+                <div class="item-info">
+                    <h3>Artisan Sourdough</h3>
+                    <p>24-hour fermented, crusty exterior with soft interior</p>
+                    <p class="price">$6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="bread">
+                <img src="images/baguette.jpg" alt="French Baguette">
+                <div class="item-info">
+                    <h3>French Baguette</h3>
+                    <p>Traditional crispy French bread</p>
+                    <p class="price">$4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="bread">
+                <img src="images/wholewheat.jpg" alt="Whole Wheat Bread">
+                <div class="item-info">
+                    <h3>Whole Wheat</h3>
+                    <p>Nutritious and hearty with organic grains</p>
+                    <p class="price">$5.75</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Pastry Items -->
+            <div class="menu-item" data-category="pastry">
+                <img src="images/croissant.jpg" alt="Butter Croissant">
+                <div class="item-info">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, buttery layers</p>
+                    <p class="price">$3.75</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="pastry">
+                <img src="images/danish.jpg" alt="Cheese Danish">
+                <div class="item-info">
+                    <h3>Cheese Danish</h3>
+                    <p>Cream cheese filling in flaky pastry</p>
+                    <p class="price">$4.25</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="pastry">
+                <img src="images/pain-au-chocolat.jpg" alt="Pain au Chocolat">
+                <div class="item-info">
+                    <h3>Pain au Chocolat</h3>
+                    <p>Buttery pastry with dark chocolate</p>
+                    <p class="price">$4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake Items -->
+            <div class="menu-item" data-category="cake">
+                <img src="images/chocolate-cake.jpg" alt="Chocolate Fudge Cake">
+                <div class="item-info">
+                    <h3>Chocolate Fudge</h3>
+                    <p>Rich chocolate cake with ganache</p>
+                    <p class="price">$6.50/slice</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cake">
+                <img src="images/red-velvet.jpg" alt="Red Velvet Cake">
+                <div class="item-info">
+                    <h3>Red Velvet</h3>
+                    <p>Classic with cream cheese frosting</p>
+                    <p class="price">$6.75/slice</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cake">
+                <img src="images/carrot-cake.jpg" alt="Carrot Cake">
+                <div class="item-info">
+                    <h3>Carrot Cake</h3>
+                    <p>Spiced with walnuts and cream cheese</p>
+                    <p class="price">$6.25/slice</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Drink Items -->
+            <div class="menu-item" data-category="drink">
+                <img src="images/espresso.jpg" alt="Espresso">
+                <div class="item-info">
+                    <h3>Espresso</h3>
+                    <p>Rich, concentrated coffee</p>
+                    <p class="price">$3.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <div class="item-info">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk foam</p>
+                    <p class="price">$4.25</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drink">
+                <img src="images/tea.jpg" alt="Herbal Tea">
+                <div class="item-info">
+                    <h3>Herbal Tea</h3>
+                    <p>Selection of organic herbal blends</p>
+                    <p class="price">$3.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cookie Items -->
+            <div class="menu-item" data-category="cookie">
+                <img src="images/chocolate-chip.jpg" alt="Chocolate Chip Cookie">
+                <div class="item-info">
+                    <h3>Chocolate Chip</h3>
+                    <p>Classic with semi-sweet chips</p>
+                    <p class="price">$2.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cookie">
+                <img src="images/oatmeal-raisin.jpg" alt="Oatmeal Raisin Cookie">
+                <div class="item-info">
+                    <h3>Oatmeal Raisin</h3>
+                    <p>Chewy with cinnamon and plump raisins</p>
+                    <p class="price">$2.75</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cookie">
+                <img src="images/macaron.jpg" alt="French Macaron">
+                <div class="item-info">
+                    <h3>French Macaron</h3>
+                    <p>Delicate almond meringue with ganache</p>
+                    <p class="price">$3.25 each</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <a href="index.html" class="back-to-home">← Back to Home</a>
+            <p>&copy; 2025 Prime Dough Bakery. All rights reserved.</p>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
